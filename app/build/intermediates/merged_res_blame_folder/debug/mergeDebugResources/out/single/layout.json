@@ -1,0 +1,58 @@
+[
+    {
+        "merged": "com.smartattendance.app-mergeDebugResources-49:/layout/custom_barcode_scanner.xml",
+        "source": "com.smartattendance.app-main-52:/layout/custom_barcode_scanner.xml"
+    },
+    {
+        "merged": "com.smartattendance.app-mergeDebugResources-49:/layout/activity_register.xml",
+        "source": "com.smartattendance.app-main-52:/layout/activity_register.xml"
+    },
+    {
+        "merged": "com.smartattendance.app-mergeDebugResources-49:/layout/item_session.xml",
+        "source": "com.smartattendance.app-main-52:/layout/item_session.xml"
+    },
+    {
+        "merged": "com.smartattendance.app-mergeDebugResources-49:/layout/activity_session_manager.xml",
+        "source": "com.smartattendance.app-main-52:/layout/activity_session_manager.xml"
+    },
+    {
+        "merged": "com.smartattendance.app-mergeDebugResources-49:/layout/activity_scan_qr.xml",
+        "source": "com.smartattendance.app-main-52:/layout/activity_scan_qr.xml"
+    },
+    {
+        "merged": "com.smartattendance.app-mergeDebugResources-49:/layout/item_attendance_record.xml",
+        "source": "com.smartattendance.app-main-52:/layout/item_attendance_record.xml"
+    },
+    {
+        "merged": "com.smartattendance.app-mergeDebugResources-49:/layout/activity_login.xml",
+        "source": "com.smartattendance.app-main-52:/layout/activity_login.xml"
+    },
+    {
+        "merged": "com.smartattendance.app-mergeDebugResources-49:/layout/activity_student_dashboard.xml",
+        "source": "com.smartattendance.app-main-52:/layout/activity_student_dashboard.xml"
+    },
+    {
+        "merged": "com.smartattendance.app-mergeDebugResources-49:/layout/activity_generate_qr.xml",
+        "source": "com.smartattendance.app-main-52:/layout/activity_generate_qr.xml"
+    },
+    {
+        "merged": "com.smartattendance.app-mergeDebugResources-49:/layout/activity_splash.xml",
+        "source": "com.smartattendance.app-main-52:/layout/activity_splash.xml"
+    },
+    {
+        "merged": "com.smartattendance.app-mergeDebugResources-49:/layout/item_record.xml",
+        "source": "com.smartattendance.app-main-52:/layout/item_record.xml"
+    },
+    {
+        "merged": "com.smartattendance.app-mergeDebugResources-49:/layout/activity_attendance_history.xml",
+        "source": "com.smartattendance.app-main-52:/layout/activity_attendance_history.xml"
+    },
+    {
+        "merged": "com.smartattendance.app-mergeDebugResources-49:/layout/activity_attendance_list.xml",
+        "source": "com.smartattendance.app-main-52:/layout/activity_attendance_list.xml"
+    },
+    {
+        "merged": "com.smartattendance.app-mergeDebugResources-49:/layout/activity_teacher_dashboard.xml",
+        "source": "com.smartattendance.app-main-52:/layout/activity_teacher_dashboard.xml"
+    }
+]

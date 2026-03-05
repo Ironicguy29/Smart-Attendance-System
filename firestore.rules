@@ -1,0 +1,55 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // ── Helper functions ────────────────────────────────────────────────────
+    function isSignedIn()         { return request.auth != null; }
+    function isOwner(uid)         { return request.auth.uid == uid; }
+    function isTeacher()          {
+      return isSignedIn() &&
+             get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == "TEACHER";
+    }
+    function isStudent()          {
+      return isSignedIn() &&
+             get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == "STUDENT";
+    }
+
+    // ── users ───────────────────────────────────────────────────────────────
+    match /users/{uid} {
+      allow read:  if isSignedIn() && isOwner(uid);
+      allow write: if isSignedIn() && isOwner(uid);
+    }
+
+    // ── students ────────────────────────────────────────────────────────────
+    match /students/{uid} {
+      allow read:  if isSignedIn();   // teachers need to read student names
+      allow write: if isSignedIn() && isOwner(uid);
+    }
+
+    // ── teachers ────────────────────────────────────────────────────────────
+    match /teachers/{uid} {
+      allow read:  if isSignedIn();
+      allow write: if isSignedIn() && isOwner(uid);
+    }
+
+    // ── classes ─────────────────────────────────────────────────────────────
+    match /classes/{classId} {
+      allow read:  if isSignedIn();
+      allow create, update, delete: if isTeacher();
+    }
+
+    // ── attendanceSessions ──────────────────────────────────────────────────
+    match /attendanceSessions/{sessionId} {
+      allow read:  if isSignedIn();
+      allow create, update, delete: if isTeacher();
+    }
+
+    // ── attendanceRecords ───────────────────────────────────────────────────
+    // Students can read their own; teachers can read any; writes only via Cloud Function
+    match /attendanceRecords/{recordId} {
+      allow read:  if isSignedIn() &&
+                      (isTeacher() || resource.data.studentId == request.auth.uid);
+      allow write: if false;   // Cloud Function only
+    }
+  }
+}

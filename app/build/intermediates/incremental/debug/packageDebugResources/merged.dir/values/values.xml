@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="accent">#FF6F00</color>
+    <color name="background">#FAFAFA</color>
+    <color name="black">#000000</color>
+    <color name="card_background">#FFFFFF</color>
+    <color name="divider">#BDBDBD</color>
+    <color name="green">#4CAF50</color>
+    <color name="ic_launcher_background">#1565C0</color>
+    <color name="orange">#FF9800</color>
+    <color name="primary">#1565C0</color>
+    <color name="primary_dark">#0D47A1</color>
+    <color name="primary_light">#42A5F5</color>
+    <color name="red">#F44336</color>
+    <color name="scanner_overlay">#AA000000</color>
+    <color name="surface">#F5F5F5</color>
+    <color name="text_primary">#212121</color>
+    <color name="text_secondary">#757575</color>
+    <color name="white">#FFFFFF</color>
+    <string name="app_name">Smart Attendance</string>
+    <string name="attendance_history">Attendance History</string>
+    <string name="department">Department</string>
+    <string name="email">Email</string>
+    <string name="end_session">End Session</string>
+    <string name="gcm_defaultSenderId" translatable="false">65621315925</string>
+    <string name="get_location">Use My Current Location</string>
+    <string name="google_api_key" translatable="false">AIzaSyD6TPYNdI5gKkixjxADF3pj9y7J-zgtTuw</string>
+    <string name="google_app_id" translatable="false">1:65621315925:android:239be579ac12dccfcadfdc</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyD6TPYNdI5gKkixjxADF3pj9y7J-zgtTuw</string>
+    <string name="google_storage_bucket" translatable="false">smart-attendance-app-49eec.firebasestorage.app</string>
+    <string name="login">Login</string>
+    <string name="logout">Logout</string>
+    <string name="name">Full Name</string>
+    <string name="no_records">No attendance records found.</string>
+    <string name="password">Password</string>
+    <string name="project_id" translatable="false">smart-attendance-app-49eec</string>
+    <string name="register">Register</string>
+    <string name="roll_no">Roll Number</string>
+    <string name="scan_qr">Scan QR Code</string>
+    <string name="start_session">Start Session</string>
+    <style name="Theme.SmartAttendance" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorAccent">@color/accent</item>
+        <item name="android:windowBackground">@color/background</item>
+        <item name="android:statusBarColor">@color/primary_dark</item>
+        <item name="android:textColorPrimary">@color/text_primary</item>
+        <item name="android:textColorSecondary">@color/text_secondary</item>
+        <item name="android:colorBackground">@color/background</item>
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+        <item name="colorOnBackground">@color/text_primary</item>
+    </style>
+    <style name="Theme.SmartAttendance.NoActionBar" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorAccent">@color/accent</item>
+        <item name="android:windowBackground">@color/background</item>
+        <item name="android:textColorPrimary">@color/text_primary</item>
+        <item name="android:textColorSecondary">@color/text_secondary</item>
+        <item name="android:colorBackground">@color/background</item>
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+        <item name="colorOnBackground">@color/text_primary</item>
+    </style>
+    <style name="Theme.SmartAttendance.Splash" parent="Theme.SmartAttendance.NoActionBar">
+        <item name="android:windowBackground">@color/primary</item>
+        <item name="android:statusBarColor">@color/primary</item>
+    </style>
+</resources>
